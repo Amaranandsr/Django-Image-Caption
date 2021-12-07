@@ -1,0 +1,68 @@
+{% extends 'site/index.html' %}
+{%load static%}
+<!--Block content goes below-->
+{% block content %}
+
+
+
+
+<div class="container my-5 py-5 z-depth-1">
+ 
+
+
+
+  <h4 class="font-weight-bold text-center grey-text">Ai Recognizer</h4>
+  <hr>
+
+<!--All Upload Data goes below-->
+
+<form class="md-form text-center"  method="POST" enctype="multipart/form-data" action="/bot">
+  {% csrf_token %}
+  
+  <div class="file-field">
+    <div class="btn aqua-gradient btn-l float-left btn-rounded ">
+      <span><i class="fas fa-cloud-upload-alt mr-2" aria-hidden="true"></i>Choose files</span>
+      <input type="file" name="pic"> 
+    </div>
+    <div class="file-path-wrapper">
+      <input class="file-path validate" type="text" placeholder="Upload your image heres" required>
+    </div>
+    <br><br>
+    <input class="btn aqua-gradient btn-rounded z-depth-1 my-4 waves-effect" type="submit" value="submit" >
+
+  </div>
+</form>
+
+
+  <!--All Upload Data goes above-->
+
+<hr>
+<br>
+<!--Deep content goes below-->
+  <!--Section: Content-->
+  <section class="text-center px-md-5 mx-md-5 blue-grey-text">
+
+    <!--Grid row-->
+    <div class="row d-flex justify-content-center">
+
+      <!--Grid column-->
+      <div class="col-lg-12 ">
+        <h6>
+        <p>Application that takes an <strong>!mage as input</strong> and produces a relevant <strong>caption as output</strong></p>
+      </h6>
+      </div>
+      <!--Grid column-->
+
+    </div>
+    <!--Grid row-->
+  </section>
+  <!--Section: Content-->
+
+
+</div>
+<!--Deep content goes below-->
+
+
+
+
+        {% endblock %}

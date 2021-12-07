@@ -1,0 +1,54 @@
+{% extends 'site/index.html' %}
+{%load static%}
+
+
+<!--Block content goes below-->
+{% block content %}
+
+
+<div class="container my-5 py-5 z-depth-1">
+  <h4 class="font-weight-bold text-center grey-text">Image Recognizer Ai Result</h4>
+  <hr>
+
+    <!--Section: Content-->
+    <section class="px-md-5 mx-md-5 text-center text-lg-left dark-grey-text">
+
+      <!--Grid row-->
+      <div class="row d-flex justify-content-center">
+
+        <!--Grid column-->
+        <div class="col-lg-8 text-center">
+
+          <h5 class="font-weight mb-4 blue-grey-text"> <strong>[o_o] : </strong>{{description}}</h5>
+
+          <!--Image-->
+          <div class="view overlay z-depth-1-half">
+            <img src="{{imgPath}}" class="img-fluid"
+              alt="User Image"> 
+            <a href="#">
+              <div class="mask rgba-white-light"></div>
+            </a>
+          </div>
+
+        </div>
+        <!--Grid column-->
+
+      </div>
+      <!--Grid row-->
+
+
+    </section>
+    <!--Section: Content-->
+    <div class="text-center">
+      <br>
+    <input class="btn aqua-gradient btn-rounded z-depth-1 my-4 waves-effect" type=button value="Back to Home" onClick="javascript:history.go(-1);">
+  <hr>
+</div>
+
+  </div>
+
+
+
+
+
+        {% endblock %}

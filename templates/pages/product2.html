@@ -1,0 +1,85 @@
+{% extends 'site/index.html' %}
+{%load static%}
+<!--Block content goes below-->
+{% block content %}
+{% include 'front/cover.html'%}
+
+
+<div class="container my-5 py-5 z-depth-1">
+ 
+
+
+
+  <h3 class="font-weight-bold text-center">Image Restoration Application </h3>
+  <hr>
+
+<!--All Task content goes below-->
+<div class="container py-5 my-5 ">
+    <section class="p-md-3 mx-md-5">
+      <div class="row mb-5 d-flex align-items-center">
+        <div class="col-lg-6 col-md-6">
+          <div class="card">
+            <div class="card-header white">
+              <h4 class="font-weight-bold mb-0">Denoising</h4>
+            </div>
+            <div class="card-body">
+              <p class="card-text">
+                Image Denoising is the task of removing noise from an image,
+                The main aim of an image denoising algorithm is to achieve 
+                both noise reduction and feature preservation.
+              </p>
+              
+              <a class="blue-text font-weight-bold" href="/denoising">Learn more</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="view overlay rounded z-depth-1">
+            <img src="{%static 'img/deep/denoising.jpg'%}" class="img-fluid"
+              alt="Sample project image" />
+            <a href="/denoising">
+              <div class="mask rgba-white-slight"></div>
+            </a>
+          </div>
+        </div>
+      </div>      
+    </section>
+  </div>
+  <!--All Task content goes below-->
+
+<hr>
+<br>
+<!--Deep content goes below-->
+  <!--Section: Content-->
+  <section class="text-center px-md-5 mx-md-5 dark-grey-text">
+
+    <!--Grid row-->
+    <div class="row d-flex justify-content-center">
+
+      <!--Grid column-->
+      <div class="col-lg-12 ">
+
+        <p>Image Restoration and manipulation have different application. 
+          This task has a wide scope of usage for satellite imaging, 
+          low-light photography and due to advancement in digital technology, 
+          computational and communication technology restoration of clean image from 
+          degraded image is very important and hence, has evolved into a field of research
+          which intersects with image processing, computer vision and computational.</p>
+
+      </div>
+      <!--Grid column-->
+
+    </div>
+    <!--Grid row-->
+  </section>
+  <!--Section: Content-->
+
+
+</div>
+<!--Deep content goes below-->
+
+
+
+
+
+        {% endblock %}

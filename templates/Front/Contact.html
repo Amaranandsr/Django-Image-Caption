@@ -1,0 +1,59 @@
+<!-- Material form contact -->
+<div class="card container-md py-5 my-5 ">
+
+  
+  <div class="form-header  accent-1 aqua-gradient">
+    <h3 class="mt-2"><i class="fas fa-envelope"></i> Write to us:</h3>
+  </div>
+  <!--Card content-->
+  <div class="card-body px-lg-5 pt-0">
+
+      <!-- Form -->
+      <form class="text-center" method="POST" enctype="multipart/form-data" color: #757575;" action="/contact">
+        {% csrf_token %}
+   
+          <!-- Name -->
+          <div class="md-form mt-3">
+              <input type="text" name="name" id="name" class="form-control">
+              <label for="materialContactFormName">Name</label>
+          </div>
+
+          <!-- E-mail -->
+          <div class="md-form">
+              <input type="email" name="email"id="email" class="form-control">
+              <label for="materialContactFormEmail">E-mail</label>
+          </div>
+
+          <!-- Subject -->
+          <label><strong>Subject</strong></label>
+        <select class="browser-default custom-select mb-4 mdb-select">
+        <option value="" disabled>Choose option</option>
+        <option value="1" selected>Feedback</option>
+        <option value="2">Report a bug</option>
+        <option value="3">Feature request</option>
+        
+    </select>
+
+          <!--Message-->
+          <div class="md-form">
+              <textarea name="content" id="content" class="form-control md-textarea" rows="3"></textarea>
+              <label for="materialContactFormMessage">Message</label>
+          </div>
+
+          <!-- Copy -->
+          <div class="form-check">
+              <input type="checkbox" class="form-check-input" id="materialContactFormCopy">
+              <label class="form-check-label" for="materialContactFormCopy">Send me a copy of this message</label>
+          </div>
+
+          <!-- Send button -->
+          <button class="btn aqua-gradient btn-rounded  z-depth-1 my-4 waves-effect" type="submit">Send</button>
+          <input class="btn aqua-gradient btn-rounded z-depth-1 my-4 waves-effect" type=button value="Back to Home" onClick="javascript:history.go(-1);">
+
+      </form>
+      <!-- Form -->
+
+  </div>
+
+</div>
+<!-- Material form contact -->

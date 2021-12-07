@@ -1,0 +1,237 @@
+{% extends 'site/index.html' %}
+{%load static%}
+
+
+<!--Block content goes below-->
+{% block content %}
+
+
+
+
+<!-- Card -->
+<div class="card card-cascade container-md wider reverse">
+  <div class="view view-cascade overlay">
+       
+    <img class="card-img-top" src="{%static 'img/cover/aii.jpg'%}"
+      alt="Card image cap">
+    <a href="#!">
+      <div class="mask rgba-white-slight"></div>
+    </a>
+  </div>
+
+  <!-- Card content -->
+  <div class="card-body card-body-cascade text-center">
+
+    <!-- Title -->
+    <h3 class="card-title"><strong>[o_o]</strong></h3>
+    <!-- Subtitle -->
+    <h5 class="font-weight-bold indigo-text">CaptionBot</h5> 
+    <!-- Text -->
+    <p class="lead">The Captionbot is powered Computer Vision and Emotion Detection. The Computer vision categorizes images and processes the visual data while the Emotion analyzes and detects range of feelings based on a facial expression. 
+    </p>
+
+   
+  </div>
+        <!-- Card image -->
+        <div class="container z-depth-1 py-1 px-4 px-lg-0">
+
+          <!-- Section -->
+          <section>
+            
+            <style>
+              .timeline {
+                position: relative;
+                list-style: none;
+                padding: 1rem 0;
+                margin: 0;
+              }
+        
+              .timeline::before {
+                content: '';
+                position: absolute;
+                left: 50%;
+                top: 0;
+                bottom: 0;
+                width: 2px;
+                margin-left: -1px;
+                background-color: #50a1ff;
+              }
+        
+              .timeline-element {
+                position: relative;
+                width: 50%;
+                padding: 1rem 0;
+                padding-right: 2.5rem;
+                text-align: right;
+              }
+        
+              .timeline-element::before {
+                content: '';
+                position: absolute;
+                right: -8px;
+                top: 1.35rem;
+                display: inline-block;
+                width: 16px;
+                height: 16px;
+                border-radius: 50%;
+                border: 2px solid #50a1ff;
+                background-color: #fff;
+              }
+        
+              .timeline-element:nth-child(even)::before {
+                right: auto;
+                left: -8px;
+              }
+        
+              .timeline-element:nth-child(even) {
+                margin-left: 50%;
+                padding-left: 2.5rem;
+                padding-right: 0;
+                text-align: left;
+              }
+        
+              @media (max-width: 767.98px) {
+                .timeline::before {
+                  left: 8px;
+                }
+              }
+        
+              @media (max-width: 767.98px) {
+                .timeline-element {
+                  width: 100%;
+                  text-align: left;
+                  padding-left: 2.5rem;
+                  padding-right: 0;
+                }
+              }
+        
+              @media (max-width: 767.98px) {
+                .timeline-element::before {
+                  top: 1.25rem;
+                  left: 1px;
+                }
+              }
+        
+              @media (max-width: 767.98px) {
+                .timeline-element:nth-child(even) {
+                  margin-left: 0rem;
+                }
+              }
+        
+              @media (max-width: 767.98px) {
+                .timeline-element {
+                  width: 100%;
+                  text-align: left;
+                  padding-left: 2.5rem;
+                  padding-right: 0;
+                }
+              }
+        
+              @media (max-width: 767.98px) {
+                .timeline-element:nth-child(even)::before {
+                  left: 1px;
+                }
+              }
+        
+              @media (max-width: 767.98px) {
+                .timeline-element::before {
+                  top: 1.25rem;
+                }
+              }
+            </style>
+            
+            
+            <hr class="w-header my-1">
+            
+            
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+        
+                <ol class="timeline">
+                  <li class="timeline-element">
+                    <h5 class="font-weight-bold dark-grey-text mb-3">Introduction</h5>
+                    <p class="grey-text font-small"><time datetime="2017-02-08"></time></p>
+                    <p class="text-muted ">Image caption Generator is a popular research area of Artificial Intelligence that deals with image understanding and a language description for that image. Generating well-formed sentences requires both syntactic and semantic understanding of the language. Being able to describe the content of an image using accurately formed sentences is a very challenging task, but it could also have a great impact, by helping visually impaired people better understand the content of images. </p>
+                  </li>
+        
+                  <li class="timeline-element">
+                    <h5 class="font-weight-bold dark-grey-text mb-3">Approach to the problem statement</h5>
+                    <p class="grey-text font-small"><time datetime="2017-08-17">The below diagram is a visual representation of our approach.</time></p>
+                    <p><img class="img-fluid z-depth-1-half rounded" src="{%static 'img/cover/approch.jpg'%}" alt="..."></p>
+                    <p class="text-muted">We will tackle this problem using an Encoder-Decoder model. Here our encoder model will combine both the encoded form of the image and the encoded form of the text caption and feed to the decoder.</p>
+                  </li>
+        
+                  <li class="timeline-element">
+                    <h5 class="font-weight-bold dark-grey-text mb-3">Understanding the dataset</h5>
+                    <p class="grey-text font-small"><time datetime="2018-03-26"></time></p>
+                    <p class="text-muted">A number of datasets are used for training, testing, and evaluation of the image captioning methods. The datasets differ in various perspectives such as the number of images, the number of captions per image, format of the captions, and image size.</p>
+                    </li>
+
+                  <li class="timeline-element">
+                    <h5 class="font-weight-bold dark-grey-text mb-3">Step's</h5>
+                    <p class="grey-text font-small"><time datetime="2018-02-10"></time></p>
+                    <p><ul class="text-muted" >
+                      <li>Data loading and Preprocessing</li>
+                      
+                      <li>Glove Embedding</li>
+                      
+                      <li>Model building</li>
+                      
+                      <li>Model training</li>
+                      
+                      
+                      <li>Greedy and Beam Search</li>
+                      
+                      <li>Evaluation Model</li>
+                      
+                      </ul></p>
+                    
+                  </li>
+
+<!-- Api
+                  <li class="timeline-element">
+                    <h5 class="font-weight-bold dark-grey-text mb-3">API</h5>
+                    <p class="grey-text font-small"><time datetime="2018-04-10"></time></p>
+                    
+                    <p ><dt class="text-muted">
+                      <li>Flickr8K Dataset</li>
+                      <ul>API</ul>
+                      <dd>Keras Model API  -</dd>
+                        <dd>Keras Tokenizer API  -</dd>
+                        <dd>Keras pad_sequences  -</dd>
+                        <dd>Keras Xception  -</dd>
+                        <dd>Keras load_model  -</dd>
+                        <dd>TensorFlow  -</dd>
+                        <dd>Numpy  -</dd>
+                        <dd>matplotlib  -</dd>
+                        <dd>pillow  -</dd>
+                      
+                     
+                      </dt></p>
+                  </li>
+-->
+
+                  <li class="timeline-element">
+                    <h5 class="font-weight-bold dark-grey-text mb-3">References</h5>
+                    <p class="grey-text font-small"><time datetime="2018-04-16"></time></p>
+                    <p class="text-muted">[1] Oriol Vinyals, Alexander Toshev, Samy Bengio, Dumitru Erhan. <a href="https://arxiv.org/pdf/1411.4555.pdf">Show and Tell: A Neural Image Caption Generator</a></p>
+                    <p class="text-muted">[2] Kelvin Xu, Jimmy Ba, Ryan Kiros, Kyunghyun Cho, Aaron Courville, Ruslan Salakhutdinov, Richard Zemel, Yoshua Bengio.  <a href="https://arxiv.org/pdf/1502.03044.pdf">Show, Attend and Tell: Neural Image Caption Generation with Visual Attention</a> </p>
+                  </li>
+                </ol>
+        
+              </div>
+            </div>
+            
+          </section>
+          <!-- Section -->
+          
+        </div>
+  
+      
+  </div>
+      <!-- Card -->
+
+      
+
+
+        {% endblock %}
